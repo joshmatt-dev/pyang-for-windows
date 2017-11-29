@@ -1,21 +1,14 @@
 # pyang-for-windows
 Running Pyang requires a Bash shell, unless the Windows 10 Creators update is installed - a Bash shell is not installed by default in Windows.
 Two fairly simple alternatives exist - Cygwin and Git Bash.
-This guide will cover how to find and access your Virtual Environment created in PyCharm, and run Pyang from a Git Bash.
+This guide will cover how to run Pyang from a Git Bash.
 
-### 1. Find Virtual Environment path from PyCharm
-Open `File > Settings...` and expand `Project: <Project_Name>` on the left.
-Select `Project Interpreter` underneath.
-Take note of the `Project Interpreter` path - this should include the Python version and `virtualenv` before the path.
-
-![alt text](images/img_01.png "File > Settings...")
-
-### 2. Open Git Bash and Activate Virtual Environment
+### 1. Open Git Bash and Activate Virtual Environment
 Search for and open the Git Bash from the start menu.
 
 ![alt text](images/img_02.png "Git Bash")
 
-Change directory to the path that was noted above in PyCharm
+If you are using a Python Virtal Environment, change directory to the path in which you have created your virtual environment.
 
 ![alt text](images/img_03.png "Virtual Environment Path")
 
@@ -25,17 +18,13 @@ You should now notice the name of your virual environment appear directly above 
 
 ![alt text](images/img_04.png "Virtual Environment activated")
 
-### 3. Verify and Run Pyang
+### 2. Verify and Run Pyang
 
 Confirm that the `pyang` Python package is installed within your virtual environment by running `pip list` from the Git Bash.
 
 If `pyang` was missing, you can install `pyang` by running the command `pip install pyang` from the Git Bash.
 
 ![alt text](images/img_05.png "Pyang library installed")
-
-Change to your project directory, you can confirm the system path of the project directory in PyCharm.
-
-![alt text](images/img_06.png "Project System Path")
 
 Change directory to your project directory.
 
